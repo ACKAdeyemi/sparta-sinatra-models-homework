@@ -1,12 +1,12 @@
 <form action="/<%= @room.id %>" method="POST">
   <div>
     <label>Room Number: </label>
-    <input type="number" name="room_number" placeholder="Enter a Room Number" value="<%= @room.room_number %>">
+    <input type="number" min="1" max="10" name="room_number" placeholder="Enter a Room Number" value="<%= @room.room_number %>">
   </div>
 
   <div>
     <label>Floor Number: </label>
-    <input type="number" name="floor_number" placeholder="Enter a Floor Number" value="<%= @room.floor_number %>">
+    <input type="number" min="1" max="10" name="floor_number" placeholder="Enter a Floor Number" value="<%= @room.floor_number %>">
   </div>
 
   <div>
@@ -21,7 +21,7 @@
 
   <div>
     <label>Last Cleaned: </label>
-    <input type="date" name="last_cleaned" value="<%= @room.last_cleaned %>">
+    <input type="date" min="11-06-2018" max="15-06-2018" name="last_cleaned" value="<%= @room.last_cleaned %>">
   </div>
 
   <div>
