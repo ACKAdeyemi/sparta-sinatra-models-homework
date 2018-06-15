@@ -1,1 +1,10 @@
 <h1>Hotel Rooms Directory</h1>
+
+<% @rooms.each do |room| %>
+<div>
+  <h3><a href="/<%= room.id %>">Room Info for Room <%= room.room_number %>, Floor <%= room.floor_number %></a></h3>
+  <p>Occupied: <%= room.occupied %></p>
+  <br>
+  <hr>
+</div>
+<% end %>

@@ -1,5 +1,10 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
+require 'pg'
+require_relative './models/Room.rb'
 require_relative './controllers/rooms_controller.rb'
 
-run PostsController
+# Middleware
+use Rack::MethodOverride
+
+run RoomsController

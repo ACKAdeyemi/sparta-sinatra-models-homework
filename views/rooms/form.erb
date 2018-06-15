@@ -1,0 +1,33 @@
+<form action="/<%= @room.id %>" method="POST">
+  <div>
+    <label>Room Number: </label>
+    <input type="number" name="room_number" placeholder="Enter a Room Number" value="<%= @room.room_number %>">
+  </div>
+
+  <div>
+    <label>Floor Number: </label>
+    <input type="number" name="floor_number" placeholder="Enter a Floor Number" value="<%= @room.floor_number %>">
+  </div>
+
+  <div>
+    <label>Occupied: </label>
+    <input type="text" name="occupied" placeholder="True/False" value="<%= @room.occupied %>">
+  </div>
+
+  <div>
+    <label>Occupant Name: </label>
+    <input type="text" name="occupant_name" placeholder="John Doe" value="<%= @room.occupant_name %>">
+  </div>
+
+  <div>
+    <label>Last Cleaned: </label>
+    <input type="date" name="last_cleaned" value="<%= @room.last_cleaned %>">
+  </div>
+
+  <div>
+    <input type="submit" value="Save Room">
+  </div>
+  <% if (@room.id) %>
+    <input type="hidden" name="_method" value="PUT">
+  <% end %>
+</form>

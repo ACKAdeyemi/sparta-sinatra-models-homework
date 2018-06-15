@@ -1,0 +1,11 @@
+<h1>Room Number: <%= @room.room_number %></h1>
+<p>Floor Number: <%= @room.floor_number %></p>
+<p>Occupied: <%= @room.occupied %></p>
+<p>Occupant Name: <%= @room.occupant_name %></p>
+<p>Last Cleaned: <%= @room.last_cleaned %></p>
+<a href="/<%= @room.id %>/edit">Edit</a>
+
+<form action="/<%= @room.id %>" method="post">
+  <input type="submit" value="delete">
+  <input type="hidden" name="_method" value="DELETE">
+</form>
