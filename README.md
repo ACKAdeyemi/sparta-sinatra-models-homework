@@ -36,5 +36,5 @@ I plan to come back to this project in the future to apply the above logic in my
 
 <hr>
 
-#### Evaluation:
+#### Summary:
 I really enjoyed this homework as it allowed me gain a strong understand into how people and businesses make use of APIs, MVC, RESTful routes and templates to perform CRUD. 
