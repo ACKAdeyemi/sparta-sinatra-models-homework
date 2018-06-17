@@ -3,7 +3,7 @@
 
 #### Task:
 
-To ues what I was taught in the Sinatra Models Intro to create a SQL database, populate the table and create a website that is able to make requests to and from the database using the 7 RESTful routes. Similar to [Sinatra Models Intro](https://github.com/ACKAdeyemi/sparta-sinatra-models-intro) however this task includes the use of a database where as intro lesson made use data inside variable embedded into the resource controller.
+To use what I was taught in the Sinatra Models Intro to create a SQL database, populate the table and create a website that is able to make requests to and from the database using the 7 RESTful routes. Similar to [Sinatra Models Intro](https://github.com/ACKAdeyemi/sparta-sinatra-models-intro) however this task includes the use of a database where as intro lesson made use data inside variable embedded into the resource controller.
 
 This task makes use of:
 
